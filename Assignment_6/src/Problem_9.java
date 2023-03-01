@@ -1,9 +1,9 @@
 import java.util.Scanner;
 public class Problem_9 {
     public static void main(String[] args) {
-        Scanner x = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter a password: ");
-        String pass = x.nextLine();
+        String pass = sc.nextLine();
         
         if (tPass(pass)) {
             System.out.println("Valid Password");
@@ -16,13 +16,15 @@ public class Problem_9 {
             return false;
         }
         int DC = 0;
-        for (char c : password.toCharArray()) {
-            if (!Character.isLetterOrDigit(c)) {
-                return false;
-            }
-            if (Character.isDigit(c)) {
+        password=password.toLowerCase();
+        for (int i =0;i<password.length();i++) {
+            if ((int)password.charAt(i)>=47&&(int)password.charAt(i)<=57){
                 DC++;
             }
+            else if ((int)password.charAt(i)>=97 && (int)password.charAt(i)<=122) {
+            }
+            else
+                return false;
         }
         return DC >= 2;
     }
