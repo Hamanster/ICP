@@ -12,9 +12,9 @@ public class Problem_3 {
 	    return number == reverse(number);
 	}
 	public static void main(String[] args) {
-        Scanner x = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter an integer: ");
-        int no = x.nextInt();
+        int no = sc.nextInt();
         System.out.println("Reverse No: " + reverse(no));
         if (isPalindrome(no)) {
             System.out.println(no + " is a palindrome.");
