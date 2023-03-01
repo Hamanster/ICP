@@ -1,4 +1,3 @@
-import java.util.Scanner;
 public class Problem_2 {
 	public static int PentaNum(int n) {
 	    return n * (3 * n - 1) / 2;
