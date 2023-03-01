@@ -18,10 +18,9 @@ public class Problem_8 {
 		return flag;
 	}
 	public static void main(String[] args) {
-	Scanner x = new Scanner(System.in);
+	Scanner sc = new Scanner(System.in);
 	System.out.print("Enter a string: ");
-    String str = x.nextLine();
-	boolean Pali = pali(str);
-	System.out.println("Is input a palindrome? : " + Pali);
+	String str = sc.nextLine();
+	System.out.println("Is input a palindrome? : " + pali(str));
 }
 }
