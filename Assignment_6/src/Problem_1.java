@@ -29,7 +29,7 @@ public class Problem_1 {
 		System.out.println("Enter \n 1 for + \n 2 for - \n 3 for * \n 4 for / \n 5 for % \n 6 for sqrt");
 		int n = sc.nextInt();
 		switch (n){
-		case 1: 
+		case 1:
 			System.out.println("Enter 2 numbers :");
 			int x =sc.nextInt();
 			int y = sc.nextInt();
@@ -57,7 +57,7 @@ public class Problem_1 {
 			System.out.println("Enter 2 numbers :");
 			int g =sc.nextInt();
 			int h = sc.nextInt();
-			System.out.println(g+" % "+h+" = "+additionSimple(g,h));
+			System.out.println(g+" % "+h+" = "+remainderSimple(g,h));
 			break;
 		case 6:
 			System.out.println("Enter 2 numbers :");
