@@ -6,16 +6,7 @@ public class Problem_8 {
 		for(int i =input.length()-1;i>=0;i--) {
 			p = p + input.charAt(i);
 		}
-//		return p.equals(input); we can use .equals() which is a String function,
-//		but it is not taught tu us, so I will use a different method.
-		boolean flag = true;
-		for(int i = 0;i<p.length();i++){
-			if(p.charAt(i)!=input.charAt(i)){
-				flag =false;
-				break;
-			}
-		}
-		return flag;
+		return p.equals(input);
 	}
 	public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
